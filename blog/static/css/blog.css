@@ -64,6 +64,15 @@ main.container {
 .post h2 a:hover {
     color: #FF7F7F; /* Coral Pink on hover */
 }
+.peach-theme {
+    background-color: #fff7f3;
+    color: #4B2E2E;
+}
+
+.dark-mode {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
 
 /* Paragraph Text */
 .post p {

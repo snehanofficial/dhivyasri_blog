@@ -7,7 +7,9 @@
                         {{post.published_date}}
                     </time>
                     <h2><a href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a></h2>
-                    <p>{{post.text|linebreaksbr}}</p>
+                    <p><strong>Theme:</strong>
+                        {{ post.theme}}</p>
+                    <p>{{ post.content}}</p>
                 </article>
     {% endfor %}  
 {% endblock %}

@@ -4,8 +4,9 @@ from django.utils import timezone
 # Create your models here.
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE)
-    title = models.CharField(max_length=200)
     text = models.TextField()
+    title = models.CharField(max_length=200)
+    theme = models.CharField(max_length=200,default="Default")
     audio_file=models.FileField(upload_to='audio/',blank = True,null =True)
     image = models.ImageField(upload_to='images/',blank=True, null = True)
     video_file = models.FileField(upload_to='videos/',blank=True, null = True)

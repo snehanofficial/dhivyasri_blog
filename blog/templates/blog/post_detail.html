@@ -7,7 +7,10 @@
             {{ post.published_date}}
         </time>
         {% endif %}
-        <h2>{{ post.title }}</h2>
+       <h2>{{ post.title }}</h2>
+       <p><strong>Theme:</strong>
+        {{ post.theme}}</p>
+        <p>{{ post.content}}</p>
         {% if post.image %}
             <div style="max-width: 450px; margin: 20px auto; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,0.55);">
                 <img src="{{ post.image.url }}" 
