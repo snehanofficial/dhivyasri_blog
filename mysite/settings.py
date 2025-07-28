@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-cxp!s*o66q@w@c-et(m-m^=&ty0w*h-@6%0)@p-#atqu-+=4j=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
-
+ALLOWED_HOSTS = ['dhivyasri-blog.onrender.com', 'localhost', '127.0.0.1']
 
 # Application definition
 
